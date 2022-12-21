@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/styl.css">
+    <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <title>دار العدالة للنشر والتوزيع</title>
+</head>
+
+<body>
+    <div class="header" id="header">
+        <div class="container">
+            <div class="logo-div">
+                <img src="./images/لوجو_العدالة-removebg.png" alt="logo">
+                <div class="search-box">
+                    <i class="uil uil-search"></i>
+                    <input type="text" placeholder="ابحث هنا">
+                </div>
+            </div>
+            <ul class="nav">
+                <li><a href="#">الصفحة الرئيسية</a></li>
+                <li><a href="#">الإصدارات</a></li>
+                <li><a href="#">المؤلفون</a></li>
+                <li><a href="#">من نحن</a></li>
+                <li><a href="#">تواصل معانا</a></li>
+            </ul>
+            <ul class="icons">
+                <a href="#"><img src="./images/shopping-bag.svg" alt="cart"></a>
+                <a href="#"><img src="./images/login.svg" alt="log-in"></a>
+                <img class="menu" src="./images/bars (1).svg" alt="menu">
+            </ul>
+        </div>
+    </div>
+    <div class="header-mob" id="header">
+        <div class="container">
+            <img class="menu" id="menubtn" src="./images/bars (1).svg" alt="menu">
+            </a>
+            <div class="logo-div">
+                <img src="./images/لوجو_العدالة-removebg.png" alt="logo">
+            </div>
+            <ul class="icons">
+                <a href="#"><img src="./images/shopping-bag.svg" alt="cart"></a>
+            </ul>
+            <ul class="side-nav" id="sidenav">
+                <div class="search-box">
+                    <i class="uil uil-search"></i>
+                    <input type="text" placeholder="ابحث هنا">
+                </div>
+                <hr>
+                <li><a href="#">الصفحة الرئيسية</a></li>
+                <hr>
+                <li><a href="#">الإصدارات</a></li>
+                <hr>
+                <li><a href="#">المؤلفون</a></li>
+                <hr>
+                <li><a href="#">من نحن</a></li>
+                <hr>
+                <li><a href="#">تواصل معانا</a></li>
+                <hr>
+                <li><a href="#">تسجيل الدخول</a></li>
+                <hr>
+                <!-- Messenger المكون الإضافي "دردشة" Code -->
+                <div id="fb-root"></div>
+                
+                <!-- Your المكون الإضافي "دردشة" code -->
+                <div id="fb-customer-chat" class="fb-customerchat">
+                </div>
+                
+                <script>
+                    var chatbox = document.getElementById('fb-customer-chat');
+                    chatbox.setAttribute("page_id", "914728288636122");
+                    chatbox.setAttribute("attribution", "biz_inbox");
+                </script>
+                
+                <!-- Your SDK code -->
+                <script>
+                    window.fbAsyncInit = function () {
+                        FB.init({
+                            xfbml: true,
+                            version: 'v15.0'
+                        });
+                    };
+
+                    (function (d, s, id) {
+                        var js, fjs = d.getElementsByTagName(s)[0];
+                        if (d.getElementById(id)) return;
+                        js = d.createElement(s); js.id = id;
+                        js.src = 'https://connect.facebook.net/ar_AR/sdk/xfbml.customerchat.js';
+                        fjs.parentNode.insertBefore(js, fjs);
+                    }(document, 'script', 'facebook-jssdk'));
+                </script>
+            </ul>
+        </div>
+    </div>
+
+    <script src="./js/main.js"></script>
+</body>
+
+</html>
